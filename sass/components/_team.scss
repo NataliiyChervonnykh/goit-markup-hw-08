@@ -1,0 +1,40 @@
+.team {
+  background-color: var(--light-bg-cl);
+
+  &__name-list {
+    display: flex;
+    gap: 30px;
+
+    color: var(--title-text-color);
+  }
+
+  &__item {
+    height: 428px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    line-height: 1.19;
+
+    color: var(--title-text-color);
+  }
+
+  &__job {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primery-text-color);
+  }
+}

@@ -1,0 +1,45 @@
+@import './utilits/variables';
+@import './utilits/visually-hidden';
+@import './base/reset';
+@import './base/common';
+/* header */
+@import './components/header-page';
+/* Logo header */
+@import './components/header-page';
+/* Logo */
+@import './components/logo';
+/* nav */
+@import './components/nav';
+/* contact-header */
+@import './components/contact-header';
+/* Hero */
+@import './components/hero';
+/* Features */
+@import './components/features';
+/* <!--Work section--> */
+@import './components/work';
+/* team */
+@import './components/team';
+/* socials icons */
+@import './components/socials';
+/* ---------regular customers----------   */
+@import './components/clients';
+/* Portfolio */
+/* Filters */
+@import './components/filter';
+/* Projects section  */
+@import './components/project';
+/* footer */
+@import './components/page-footer';
+/* footer-contacts */
+@import './components/contacts-footer';
+/* footer-socials */
+@import './components/footer-socials';
+/* Форма в футере */
+@import './components/footer-form';
+/* backdrop */
+@import './components/backdrop';
+/* modal */
+@import './components/modal';
+/* modal-form */
+@import './components/modal-form';

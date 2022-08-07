@@ -1,0 +1,9 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg-cl);
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}

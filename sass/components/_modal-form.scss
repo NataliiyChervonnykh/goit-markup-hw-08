@@ -1,0 +1,161 @@
+.modal-form {
+  margin-left: auto;
+  margin-right: auto;
+
+  &__button {
+    display: inline-block;
+    padding: 10px 52px;
+    margin: 0px 124px;
+    min-width: 200px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--additional-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--time-transition) var(--cubic);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: var(--bg-cl-btn);
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(23.44 / 20);
+    text-align: center;
+    color: var(--title-text-color);
+  }
+
+  &__field {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: calc(14.06 / 12);
+    letter-spacing: 0.01em;
+  }
+
+  &__input {
+    min-width: 448px;
+    min-height: 40px;
+    padding: 11px 42px;
+    border-radius: 4px;
+    border: 1px solid var(--border-modal);
+    font: inherit;
+    outline: none;
+    transform: translateY(0);
+
+    transition: border-color var(--time-transition) var(--cubic),
+      translate var(--time-transition) var(--cubic);
+
+    &:focus-within {
+      border-color: var(--accent-color);
+    }
+
+    &:hover {
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 38px;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: var(--title-text-color);
+    transition: fill var(--time-transition) var(--cubic);
+
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__field:focus-within > &__icon {
+    fill: var(--accent-color);
+  }
+
+  &__commentary {
+    min-width: 448px;
+    min-height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--border-modal);
+    font-size: 12px;
+    line-height: calc(16.41 / 14);
+    letter-spacing: 0.01em;
+
+    resize: none;
+    outline: none;
+    transition: border-color var(--time-transition) var(--cubic);
+  }
+  &__commentary:focus-within {
+    border-color: var(--accent-color);
+  }
+  &__field.commentary {
+    margin-bottom: 20px;
+  }
+  &__commentary::placeholder {
+    color: var(--cl-commentary);
+  }
+
+  &__agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14.06 / 12);
+    letter-spacing: 0.01em;
+  }
+  &__input-agreement {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__icon-agreement {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border-radius: 1px;
+    border: 2px solid var(--title-text-color);
+    fill: var(--additional-color);
+    transition: fill var(--time-transition) var(--cubic), border var(--time-transition) var(--cubic);
+  }
+
+  /* смена иконки */
+  &__input-agreement:checked + &__icon-agreement {
+    border: none;
+    fill: var(--accent-color);
+  }
+  &__agreement-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+
+  &__agreement-link {
+    line-height: calc(24 / 14);
+    text-decoration-color: var(--accent-color);
+    text-decoration-line: underline;
+    color: var(--accent-color);
+  }
+}

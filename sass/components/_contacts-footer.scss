@@ -1,0 +1,40 @@
+.contacts {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__adress {
+    margin-top: 20px;
+    font-style: normal;
+  }
+
+  &__link {
+    line-height: 1.71;
+
+    &--wight {
+      color: var(--additional-color);
+
+      transition: color var(--time-transition) var(--cubic);
+    }
+
+    &--wight:hover,
+    &--wight:focus {
+      color: var(--accent-color);
+    }
+
+    &--gray {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.71;
+
+      color: var(--cl-text-secondary);
+
+      transition: color var(--time-transition) var(--cubic);
+    }
+
+    &--gray:hover,
+    &--gray:focus {
+      color: var(--accent-color);
+    }
+  }
+}

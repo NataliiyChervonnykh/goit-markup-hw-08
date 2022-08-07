@@ -1,0 +1,31 @@
+:root {
+  /* fonts */
+  --main-font: roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* text colors */
+
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --additional-color: #ffffff;
+  --text-part-logo: #000000;
+  --cl-link: #afb1b8;
+  --cl-commentary: rgba(117, 117, 117, 0.5);
+  --cl-text-secondary: rgba(255, 255, 255, 0.6);
+
+  /* bg colors */
+  --bg-cl-hero: #c4c4c4;
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --bg-project: #eeeeee;
+  --bg-header: #ececec;
+  --bg-cl-btn: #188ce8;
+  --border-modal: rgba(33, 33, 33, 0.2);
+
+  /* others */
+  --indent: 30px;
+  --items: 3;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-transition: 250ms;
+}

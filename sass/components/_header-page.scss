@@ -1,0 +1,10 @@
+.header-page {
+  border-bottom: 1px solid var(--bg-header);
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: -1px;
+  }
+}

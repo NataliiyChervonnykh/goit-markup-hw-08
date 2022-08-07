@@ -1,0 +1,35 @@
+.filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+  &__item &__btn {
+    display: block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    cursor: pointer;
+
+    background-color: var(--light-bg-cl);
+    color: var(--title-text-color);
+
+    transition: background-color var(--time-transition) var(--cubic),
+      color var(--time-transition) var(--cubic), box-shadow var(--time-transition) var(--cubic);
+  }
+
+  &__item &__btn:hover,
+  &__item &__btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--accent-color);
+    color: var(--additional-color);
+  }
+}

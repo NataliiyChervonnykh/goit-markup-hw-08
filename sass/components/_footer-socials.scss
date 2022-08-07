@@ -1,0 +1,38 @@
+.socials-blok {
+  margin-right: 93px;
+}
+
+.footer-text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--additional-color);
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color var(--time-transition) var(--cubic);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: var(--additional-color);
+  }
+}
