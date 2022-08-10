@@ -29,15 +29,15 @@
   <body data-page>
     <!--Header section-->
 
-    <header class="header-page">
-      <div class="header-page__content container">
+    <header class="header">
+      <div class="header__content container">
         <a class="logo link" href="./index.html" aria-label="Логотип WebStudio"
           >Web<span class="logo--black">Studio</span></a
         >
 
         <!-- Nav-list -->
 
-        <nav class="nav">
+        <!-- <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a class="nav-list__link link current" href="./index.html">Студия</a>
@@ -49,11 +49,11 @@
               <a class="nav-list__link link" href="./index.html">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
 
         <!-- Contacts -->
 
-        <ul class="header-contacts list">
+        <!-- <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a class="link" href="mailto:info@devstudio.com"
               ><svg class="header-contacts__icon-mail" width="16" height="12">
@@ -70,7 +70,72 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
+        </ul> -->
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#menu_24px"></use>
+            <use class="icon-close" href="./images/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <!-- <div class="navigation"> -->
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="./Portfolio.html">Портфолио</a>
+            </li>
+            -
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="./index.html">Контакты</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+
+          <!-- <div class="contacts"> -->
+          <ul class="header-contacts list">
+            <li class="header-contacts__item">
+              <a class="link tel" href="tel:+380961111111">
+                <!-- <svg class="header-contacts__icon-tel" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg> -->
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a class="link" href="mailto:info@devstudio.com">
+                <!-- <svg class="header-contacts__icon-mail" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg> -->
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobil-socials list">
+            <li class="mobil-socials__item">
+              <a class="mobil-socials__link link" href="Instagram"> Instagram </a>
+            </li>
+            <li class="mobil-socials__item">
+              <a class="mobil-socials__link link" href="Twitter"> Twitter </a>
+            </li>
+            <li class="mobil-socials__item">
+              <a class="mobil-socials__link link" href="Facebook"> Facebook </a>
+            </li>
+            <li class="mobil-socials__item">
+              <a class="mobil-socials__link link" href="LinkedIn"> LinkedIn </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -79,12 +144,12 @@
     <main>
       <!--Hero saction-->
 
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open type="button" class="hero__btn">Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
       <!--Feature section-->
 
@@ -145,7 +210,7 @@
 
       <!-- work secnion -->
 
-      <section class="work-section">
+      <!-- <section class="work-section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list list">
@@ -186,11 +251,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--team section-->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
 
@@ -475,11 +540,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- regular customers -->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
 
@@ -569,12 +634,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--Footer section-->
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="page-footer__container container">
         <div class="logo-part">
           <a class="logo link" href="./index.html">Web<span class="logo--white">Studio</span></a>
@@ -665,13 +730,12 @@
           </ul>
         </div>
 
-        <!-- Форма в футере -->
-
+        
         <div class="footer-subscription">
           <p class="footer-text">Підпишіться на розсилку</p>
 
           <form class="footer-form js-speaker-form" autocomplete="off">
-            <!-- <div class="footer-form__field"> -->
+          
             <label class="" for="email"></label>
             <input
               class="footer-form__input"
@@ -688,11 +752,11 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-            <!-- </div> -->
+           
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальное окно -->
 
@@ -770,6 +834,8 @@
         });
       })();
     </script>
+
+    <script src="./js/menu-button.js"></script>
   </body>
 </html>
 

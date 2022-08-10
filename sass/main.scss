@@ -2,10 +2,9 @@
 @import './utilits/visually-hidden';
 @import './base/reset';
 @import './base/common';
+@import './base/menu';
 /* header */
-@import './components/header-page';
-/* Logo header */
-@import './components/header-page';
+@import './components/header';
 /* Logo */
 @import './components/logo';
 /* nav */

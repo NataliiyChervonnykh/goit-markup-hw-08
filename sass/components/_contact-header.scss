@@ -1,10 +1,24 @@
 .header-contacts {
-  display: inline-flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    // &__item + &__item {
+    //   margin-top: 10px;
+    // }
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // &__item + &__item {
+    //   margin-left: 50px;
+    // }
+    flex-direction: row;
+  }
 
   .link {
     display: flex;
     align-items: center;
-    padding: 32px 0;
 
     font-weight: 500;
     line-height: 1.14;
@@ -13,9 +27,10 @@
     color: var(--primery-text-color);
 
     transition: color var(--time-transition) var(--cubic);
-  }
-  &__item + &__item {
-    margin-left: 50px;
+
+    // @media screen and (min-width: 768px) {
+    //   gap: 10px;
+    // }
   }
 
   & .link:hover,

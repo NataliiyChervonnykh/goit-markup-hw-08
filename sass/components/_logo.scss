@@ -1,11 +1,9 @@
 .logo {
   display: block;
 
-  margin-right: 93px;
-
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
 
   color: var(--accent-color);
@@ -19,5 +17,14 @@
   }
   &-part {
     margin-right: 70px;
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 87px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    margin-right: 92px;
   }
 }
