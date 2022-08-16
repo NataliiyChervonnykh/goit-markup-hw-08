@@ -1,16 +1,8 @@
 .header {
   position: relative;
+  z-index: 100;
   border-bottom: 1px solid var(--bg-header);
 
-  // padding: 10px 0;
-
-  // @media screen and (min-width: 768px) {
-  //   padding: 21px 0;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   padding: 24px 0;
-  // }
   &__content {
     display: flex;
     align-items: center;
@@ -20,10 +12,7 @@
 
     @media screen and (min-width: 768px) {
       justify-content: flex-start;
+      min-height: 80px;
     }
   }
-
-  // &__content.is-open .logo {
-  //   display: none;
-  // }
 }

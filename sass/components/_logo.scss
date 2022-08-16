@@ -8,6 +8,10 @@
 
   color: var(--accent-color);
 
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
   &--black {
     color: var(--text-part-logo);
   }
@@ -18,13 +22,25 @@
   &-part {
     margin-right: 70px;
   }
-
-  // @media screen and (min-width: 768px) {
-  //   margin-right: 87px;
-  // }
+  &-part-footer {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     margin-right: 92px;
+  }
+  &__footer {
+    @media screen and (max-width: 768px) {
+      margin-right: 39px;
+    }
   }
 }

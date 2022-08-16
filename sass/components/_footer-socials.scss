@@ -1,19 +1,55 @@
 .socials-blok {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    padding-right: 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    // margin-right: 93px;
+  }
 }
 
 .footer-text {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
   font-family: var(--main-font);
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
+
   text-transform: uppercase;
 
   color: var(--additional-color);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+    margin-right: 93px;
+    justify-content: flex-start;
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   text-align: center;
+  // }
 }
 .footer-socials {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
+
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: baseline;
+  //   width: 603px;
+  //   margin-left: 61px;
+  //   margin-bottom: 60px;
+  // }
 
   &__link {
     display: flex;

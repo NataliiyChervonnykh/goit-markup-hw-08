@@ -1,7 +1,22 @@
 .project {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
+
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+    flex-wrap: wrap;
+  }
 
   .project__item {
     flex-basis: calc((100% - (var(--indent)) * (var(--items) - 1)) / var(--items));
@@ -67,9 +82,17 @@
   }
 
   &__text {
-    padding: 63px 24px;
+    padding: 77px 24px;
     font-size: 18px;
     line-height: 1.56;
     color: var(--additional-color);
+
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
 }

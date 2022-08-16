@@ -27,10 +27,6 @@
     color: var(--primery-text-color);
 
     transition: color var(--time-transition) var(--cubic);
-
-    // @media screen and (min-width: 768px) {
-    //   gap: 10px;
-    // }
   }
 
   & .link:hover,
