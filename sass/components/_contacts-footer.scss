@@ -1,3 +1,7 @@
+address {
+  margin-top: 20px;
+}
+
 .contacts {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -26,13 +30,13 @@
   }
 
   &__adress {
-    margin-top: 20px;
+    // margin-top: 20px;
     font-style: normal;
   }
 
   .contacts__item {
     @media screen and (max-width: 480px) {
-      display: flex;
+      // display: flex;
     }
   }
 

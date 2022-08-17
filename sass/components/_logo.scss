@@ -19,10 +19,18 @@
   &--white {
     color: var(--additional-color);
   }
+
+  &__footer {
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+
   &-part {
     margin-right: 70px;
   }
   &-part-footer {
+    text-align: center;
     @media screen and (min-width: 480px) {
       display: flex;
       flex-direction: column;
@@ -40,7 +48,7 @@
   }
   &__footer {
     @media screen and (max-width: 768px) {
-      margin-right: 39px;
+      // margin-right: 39px;
     }
   }
 }

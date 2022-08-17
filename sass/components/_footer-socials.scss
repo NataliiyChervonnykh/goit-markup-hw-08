@@ -1,11 +1,13 @@
 .socials-blok {
+  margin-top: 60px;
   @media screen and (min-width: 768px) {
     padding-right: 74px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
-    // margin-right: 93px;
+    margin-right: 93px;
+    padding-right: 0;
   }
 }
 
@@ -13,7 +15,6 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 60px;
   font-family: var(--main-font);
   font-weight: 700;
   line-height: 1.14;
@@ -27,7 +28,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 72px;
+    // margin-top: 72px;
     margin-right: 93px;
     justify-content: flex-start;
   }

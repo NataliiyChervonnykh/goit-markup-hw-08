@@ -12,7 +12,7 @@
   // }
 
   &__container {
-    display: flex;
+    // display: flex;
 
     @media screen and (min-width: 480px) {
       flex-direction: column;
@@ -24,6 +24,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+      display: flex;
       flex-direction: row;
       align-items: baseline;
     }
@@ -39,7 +40,7 @@
 
     @media screen and (min-width: 1200px) {
       padding-left: 0;
-      padding-right: 0;
+      // padding-right: 0;
     }
   }
 }

@@ -9,6 +9,8 @@
 
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
+
   transition: opacity var(--time-transition) var(--cubic),
     visibility var(--time-transition) var(--cubic);
 }

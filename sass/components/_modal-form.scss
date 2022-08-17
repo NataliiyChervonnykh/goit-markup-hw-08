@@ -5,7 +5,7 @@
   &__button {
     display: inline-block;
     padding: 10px 52px;
-    margin: 0px 125px;
+    // margin: 0px 125px;
     min-width: 200px;
     border-radius: 4px;
     border: none;
@@ -55,7 +55,8 @@
   }
 
   &__input {
-    min-width: 370px;
+    // min-width: 370px;
+    min-width: 100%;
     min-height: 40px;
     padding: 11px 42px;
     border-radius: 4px;
@@ -98,7 +99,8 @@
   }
 
   &__commentary {
-    min-width: 370px;
+    // min-width: 370px;
+    width: 100%;
     min-height: 120px;
     padding: 12px 16px;
     border-radius: 4px;
@@ -183,7 +185,7 @@
     text-decoration-line: underline;
     color: var(--accent-color);
 
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: calc(24 / 14);
     }
