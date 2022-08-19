@@ -16,6 +16,10 @@
   transition: transform var(--time-transition) var(--cubic),
     opacity var(--time-transition) var(--cubic);
 
+  @media screen and (min-width: 760px) {
+    min-width: 450px;
+    top: 37%;
+  }
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
