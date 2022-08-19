@@ -1298,7 +1298,7 @@ address {
 }
 
 /* footer-socials */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .socials-blok {
     margin-top: 60px;
   }
